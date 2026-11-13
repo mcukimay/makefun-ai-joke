@@ -11,4 +11,7 @@ import { join } from 'node:path';
 
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-writeFileSync(join(OUTPUT_DIR, 'entry.txt'), 'My coding agent is just a rubber duck that charges by the token.');
+// The joke itself: one fixed line, written with no trailing newline.
+const JOKE = 'My coding agent is just a rubber duck that charges by the token.';
+
+writeFileSync(join(OUTPUT_DIR, 'entry.txt'), JOKE);
